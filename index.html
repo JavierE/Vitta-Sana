@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vitta sana</title>
+</head>
+<body>
+    <header class="header"  id="header">
+        <div class="logo">
+            <img src="Logo.png" alt="Logo de la marca">
+        </div>
+        <nav id="menu">
+           <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#masa">Masa corporal</a></li>
+                <li><a href="#comida">Menú alimenticio</a></li>
+                <li><a href="#habito">Hábitos</a></li>
+                <li><a href="#bebida">Recetas de bebida</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="supreme()"><i class="fa fa-bars"></i></a></li>
+           </ul>            
+        </nav>
+    </header>
+    
+    </body>
+
+    <div id="inicio" class="hero-image">
+        <div class="hero-text">
+          <h1>Vitta Sana</h1>
+          <p>Escencia Saludable</p>
+        </div>
+    </div>
+
+        <h1 class="titles" id="masa">Masa Corporal</h1>
+        <div class="boxuno">
+            
+            <div class="p">
+                <h1>Informacion Basica</h1>
+                <p> *El Índice de Masa Corporal (IMC) es una medida utilizada para evaluar el peso corporal en relación con la altura. 
+                    Es un indicador sencillo
+                    que se usa comúnmente para clasificar el peso en categorías que pueden llevar a problemas de salud.</p>
+                <br>
+                <br>
+                <p>* La obesidad puede provocar un aumento del riesgo de diabetes de tipo 2 y cardiopatías, 
+                    puede afectar la salud ósea y la reproducción y aumenta el riesgo de que aparezcan determinados tipos de cáncer. 
+                </p>
+            </div>
+            <div class="container">
+                <h1>Índice de masa corporal</h1>    
+                <div class="calculadora">
+                    <input type="number" id="ancho" placeholder="Peso (kg)" name="">
+
+                        <br>
+                        <br>
+
+                    <input type="number" id="alto" placeholder="Altura (cm)" name="">
+                        <br>
+                        <br>
+
+                    <button onclick="calcular()">Calcular IMC</button>
+
+                    <div id="total"></div>
+
+                </div>
+                <br>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rango de IMC</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody> 
+                        <tr>
+                            <td>Menos de 18.5</td>
+                            <td>Bajo Peso</td>
+                        </tr>
+
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Peso Normal</td>
+                        </tr>
+
+                        <tr>
+                            <td>25 - 29.9</td>
+                            <td>Sobre Peso</td>
+                        </tr>
+
+                        <tr>
+                            <td>30 o más</td>
+                            <td>Obesidad</td>
+                        </tr>
+                    </tbody>
+                    </table>
+            </div>        
+        </div>
+        
+        <h1  class="titles">Menú alimenticio</h1>
+        <div  class="container2" id="comida">
+            <div class="food1">
+                <h4>Evacocina</h4>
+                <br>
+                <img src="Comida1.jpg" alt="">  
+                <br>
+                <a href="https://www.evamuerdelamanzana.com/recetas/" class="bt" target="_blank">VISITAR</a>
+                <p class="desc">
+                    En está página encontraras un plan de menús saludables y sencillos de preparar.
+                    Encontrarás recetas como ensaladas, sopas, acompañamientos y snacks. Cuenta con un canal de youtube
+                    también llamado "<span><a href="https://www.youtube.com/@evacocina5907?" target="_blank">Evacocina</a></span>".
+                </p>
+            </div>
+            <div class="veganfood2">
+                <h4>Veggieboogie</h4>
+                <img src="comidita.jpg" alt="">
+                <a href="https://www.veggieboogie.com/
+                " class="bt" target="_blank">VISITAR</a>
+                <p class="desc">
+                    En está página encontraras recetas vegetarianas y veganas, sencillas, naturales y fáciles de realizar.
+                    Te guiara <span><a href="https://rociomontoya.com/" target="_blank">Rocío Montoya</a></span> quien es fotógrafa y artista visual,
+                    ella te ayudará a encontrar un equilibrio saludable en tu dieta diaria a través de comidas sencillas.
+                </p>
+            </div>
+            <div class="food3">
+                <h4>Directo al Paladar</h4>
+                <img src="Comida2.jpg" alt="">
+                <a href="https://www.directoalpaladar.com/tag/recetas-saludables" class="bt">VISITAR</a>
+                <p class="desc">
+                    En está página encontraras diversas recetas saludables y deliciosas para preparar, justo aquí las encontrarás.
+                    Puedes encontrarlos como "<span><a href="https://www.directoalpaladar.com/tag/recetas-saludables">Directo al Paladar</a></span>".
+                </p>
+            </div>
+        </div>
+
+        <h1 id="habito" class="titles">Habitos Saludables</h1>
+        <div class="consejos">
+           
+            <div class="uno">
+                <h3>Comer frutas y verduras </h3>
+                <img src="consejo1.jpg" alt="">
+                <p>al menos 400 g (3 o 5 porciones) de frutas y hortalizas al día, además de legumbres (por ejemplo, lentejas, judías), 
+                    frutos secos y cereales integrales 
+                    (por ejemplo, maíz, mijo, avena, trigo o arroz integral no procesados).
+                    Con el fin de mejorar el consumo de frutas y verduras se puede:</p>
+                <ul>
+                    <li>Incluir verduras en todas las comidas</li>
+                    <li>Comer frutas frescas y verduras crudas como aperitivos</li>
+                    <li>Comer frutas y verduras frescas de temporada</li>
+                </ul>
+            </div>
+
+            <div class="dos">
+                <h3>Limitar el consumo de azúcares libres </h3>
+                <img src="consejo2.jpg" alt="">
+                <p>un 5% de la ingesta calórica total. Son los fabricantes o el propio consumidor quienes añaden a 
+                    los alimentos la mayor parte de los azúcares libres. El azúcar libre también puede estar presente en el azúcar natural de
+                    la miel y los zumos y concentrados de frutas.</p>
+            </div>
+                
+            <div class="tres">
+                    <h3>Limitar el consumo de grasa</h3>
+                    <img src="consejo3.jpg" alt="">
+                    <p>30% de la ingesta calórica diaria. Las grasas no saturadas (presentes en el aceite de pescado, los aguacates, 
+                        los frutos secos, o el aceite de girasol y oliva) son preferibles a las grasas saturadas (presentes en 
+                        la carne grasa, la mantequilla, la nata, el queso y la manteca de cerdo). Las grasas industriales de tipo
+                        trans (presentes en los alimentos procesados, la comida rápida, los aperitivos, los alimentos fritos, 
+                        las pizzas congeladas, los pasteles, las galletas y las margarinas) no forman parte de una dieta sana.
+                    </p>
+            </div>
+        </div>
+
+        
+        <h1 class="titles">Recetario Bebidas</h1>
+        
+        <div id="bebida" class="containertres">
+            <div class="Jugo-uno">
+                <h2>Jugo de apio, pera, pepino y brócoli</h2>
+                <img src="Imagen 1.png" alt="">
+                <div class="tab">
+                    <button class="tablinks" onclick="openMenuUno(event, 'ingredientes')">Ingredientes</button>
+                    <button class="tablinks" onclick="openMenuUno(event, 'preparación')">Método de preparación</button>
+                    <button class="tablinks" onclick="openMenuUno(event, 'nutricion')">Información nutricional</button>
+                </div>
+                  
+                <div id="ingredientes" class="tabcontent">
+                    <h3>Ingredientes</h3>
+                    <p><input type="checkbox">2 ramitas de apio</p>
+                    <p><input type="checkbox">1/2 pieza de pepino</p>
+                    <p><input type="checkbox">4 tazas de agua</p>
+                    <p><input type="checkbox">1 pera</p>
+                    <p><input type="checkbox">1 pieza de pera en cubos</p>
+                    <p><input type="checkbox">1 Pieza de lanceta de madera para hacer brochetas de pera y pepino</p>
+                    <p><input type="checkbox">1/4 Taza de hoja de menta</p>
+                    <p><input type="checkbox">1/2 pieza de pepino en cubos</p>
+                </div>
+                  
+                <div id="preparación" class="tabcontent">
+                    <h3>Método de preparación</h3>
+                    <p>
+                        <li>
+                            "lava y pela todos los ingredientes"
+                        </li>
+                        <li>
+                            "Agrega por pocos el agua en tu licuadora y agrega una pieza 1/2 de peipno y pera en cubos, por último agrega las ramitas de apio "
+                        </li>
+                        <li>
+                            "Licua todos los ingredientes, al finalizar, en la brocheta coloca la un cubo de pera y otro pepino hasta ocupar casi toda la lanceta, 
+                            <br>esta bebida te alcanza para cuatro vasos."
+                        </li>
+                    </p> 
+                </div>
+                  
+                <div id="nutricion" class="tabcontent">
+                    <h3>Valor Nutricional <small>Jugo de apio, pera, pepino y brócoli</small></h3>
+                    <img src="Tabla.jpg" alt="" class="uno">
+                </div>
+            </div>
+           
+            <div class="Jugo-dos">
+                <h2>Jugo de zanahoria, manzana y naranja</h2>
+                <img src="Imagen 2.png" alt="">
+                <div class="tab1">
+                    <button class="tablinks1" onclick="openMenudos(event, 'ingredientes1')">Ingredientes</button>
+                    <button class="tablinks1" onclick="openMenudos(event, 'preparación1')">Método de preparación</button>
+                    <button class="tablinks1" onclick="openMenudos(event, 'nutrición')">Información nutricional</button>
+                </div>
+                  
+                <div id="ingredientes1" class="tabcontent1">
+                    <h3>Ingredientes</h3>
+                    <p><input type="checkbox">3 Piezas de zanahoria lavadas y peladas</p>
+                    <p><input type="checkbox">1 Cucharadita de jengibre</p>
+                    <p><input type="checkbox">1 Taza de agua</p>
+                    <p><input type="checkbox">1 Pieza de manzana roja</p>
+                    <p><input type="checkbox">2 Tazas de jugo de naranja</p>
+                </div>
+                  
+                <div id="preparación1" class="tabcontent1">
+                    <h3>Método de preparación</h3>
+                    <p>
+                        <li>
+                            "Corta en trozos la zanahoria y la manzana. Coloca en el vaso de tu licuadora y procesa hasta tener un jugo integrado. Sirve y disfruta."
+                        </li>
+                        <li>
+                            "El jugo de naranja es suficiente para endulzar esta receta, sin embargo si la deseas más dulce puedes agregar una cucharadita de la miel de tu preferencia."
+                        </li>
+                        <li>
+                            "Esta bebida te alcanza para dos vasos."
+                        </li>
+                    </p> 
+                </div>
+
+                <div id="nutrición" class="tabcontent1">
+                    <h3>Valor Nutricional <small>Jugo de apio, pera, pepino y brócoli</small></h3>
+                    <img src="Tabla.jpg" alt="" class="uno">
+                </div>
+                
+            </div>
+
+            <div class="Jugo-tres">
+                <h2>Batido de Papaya</h2>
+                <img src="Imagen 3.png" alt="">
+                <div class="tab2">
+                    <button class="tablinks2" onclick="openMenuTres(event, 'ingredientes2')">Ingredientes</button>
+                    <button class="tablinks2" onclick="openMenuTres(event, 'preparacion2')">Método de preparación</button>
+                    <button class="tablinks2" onclick="openMenuTres(event, 'nutricion2')">Información nutricional</button>
+                </div>
+                  
+                <div id="ingredientes2" class="tabcontent2">
+                        <h3>Ingredientes</h3>
+                        <p><input type="checkbox">400 Gramos de papaya en cubos</p>
+                        <p><input type="checkbox">6 Piezas de hielo</p>
+                        <p><input type="checkbox">1 Tazas de leche de coco</p>
+                        <p><input type="checkbox">1 Cucharada de miel de agave</p>
+                        <p><input type="checkbox">1/2 Taza de yogurt estilo griego sin endulzar</p>
+                </div>
+                  
+                <div id="preparacion2" class="tabcontent2">
+                        <h3>Método de preparación</h3>
+                        <p>
+                            <li>
+                             "Licúa todos los ingredientes hasta obtener un licuado espeso pero líquido e integrado. Sirve y disfruta inmediatamente."
+                            </li>
+                            <li>
+                             "Esta bebida alcanza para dos vasos."
+                            </li>
+                        </p> 
+                </div>
+                  
+                <div id="nutricion2" class="tabcontent2">
+                        <h3>Valor Nutricional <small>Jugo de apio, pera, pepino y brócoli</small></h3>
+                        <img src="Tabla.jpg" alt="" class="uno">
+                </div>
+            </div>
+        </div>
+
+        <div class="ultimo">
+            <div class="info">
+                <ul>
+                    <li>
+                        <a href="">Contactanos</a>
+                    </li>
+                    <li>
+                        <img src="Icono Ig.png" alt="Instagram">
+                        <a href="">TuVittaSana_</a>
+                    </li>
+                    <li>
+                        <img src="Icono mensaje.png" alt="Mensaje">
+                        <a href="">(+502) 5698-3254</a>
+                    </li>
+                    <li>
+                        <img src="Icono Telefono.png" alt="Teléfono">
+                        <a href="">7854-9512</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icono">
+                <a href="https://www.elmueble.com/cocinas/comidas-saludables_46627" target="_blank"><img src="Icono Sopita.png"  alt="Sopita" ></a>
+                <a href="https://www.iberostar.com/inspiration-guide/wellness/bebidas-saludables-beber-vivir-10-bebidas-mejoraran-vida/" target="_blank"><img src="Icono Bebida.png" alt="Bebida"></a>
+            </div>
+        </div>        
+
+
+    </div>
+    
+    <script src="java.js"></script>
+</body>
+</html>
